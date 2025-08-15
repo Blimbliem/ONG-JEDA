@@ -1,90 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JEDA - Jovem Esperança do Amanhã</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-blue-700 text-white shadow-md fixed w-full top-0 z-50">
+  <!-- HEADER -->
+  <header class="bg-blue-300 text-gray-900 shadow-md fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold">JEDA</h1>
-      <nav class="space-x-6">
-        <a href="#inicio" class="hover:text-yellow-300">Início</a>
-        <a href="#sobre" class="hover:text-yellow-300">Sobre</a>
-        <a href="#projetos" class="hover:text-yellow-300">Projetos</a>
-        <a href="#contato" class="hover:text-yellow-300">Contato</a>
-        <a href="#contribuir" class="bg-yellow-400 text-blue-900 px-3 py-1 rounded hover:bg-yellow-300">Contribuir</a>
+      <h1 class="text-2xl font-bold tracking-wide">JEDA</h1>
+      
+      <!-- Menu desktop -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#inicio" class="hover:text-yellow-500 transition">Início</a>
+        <a href="#sobre" class="hover:text-yellow-500 transition">Sobre</a>
+        <a href="#projetos" class="hover:text-yellow-500 transition">Projetos</a>
+        <a href="#contato" class="hover:text-yellow-500 transition">Contato</a>
+        <a href="#contribuir" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300 transition">
+          Contribuir
+        </a>
       </nav>
+
+      <!-- Botão mobile -->
+      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
+
+    <!-- Menu mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-blue-300 px-6 pb-4">
+      <a href="#inicio" class="block py-2 hover:text-yellow-500 transition">Início</a>
+      <a href="#sobre" class="block py-2 hover:text-yellow-500 transition">Sobre</a>
+      <a href="#projetos" class="block py-2 hover:text-yellow-500 transition">Projetos</a>
+      <a href="#contato" class="block py-2 hover:text-yellow-500 transition">Contato</a>
+      <a href="#contribuir" class="block py-2 mt-2 bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300 transition">
+        Contribuir
+      </a>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="inicio" class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-center px-4" style="background-image: url('banner.jpg');">
-    <h2 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Jovem Esperança do Amanhã</h2>
-    <p class="mt-4 text-lg md:text-xl max-w-2xl text-white drop-shadow-md">
+  <!-- HERO -->
+  <section id="inicio" class="bg-white h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-4xl md:text-6xl font-bold text-gray-900 drop-shadow-none">
+      Jovem Esperança do Amanhã
+    </h2>
+    <p class="mt-4 text-lg md:text-xl max-w-2xl text-gray-800">
       Transformando vidas através da educação e apoio aos jovens. Junte-se a nós e faça parte dessa mudança!
     </p>
-    <a href="#contribuir" class="mt-6 bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+    <a href="#contribuir" 
+       class="mt-6 bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
       Quero Contribuir
     </a>
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="max-w-6xl mx-auto py-16 px-6">
+  <!-- SOBRE -->
+  <section id="sobre" class="max-w-6xl mx-auto py-20 px-6">
     <h2 class="text-3xl font-bold text-center text-blue-700 mb-6">Sobre a ONG</h2>
-    <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
+    <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto leading-relaxed">
       A JEDA é uma organização sem fins lucrativos que oferece apoio educacional e social para jovens e adolescentes,
-      preparando-os para o futuro e para o mercado de trabalho.
+      preparando-os para o futuro e para o mercado de trabalho. Nosso compromisso é criar oportunidades de aprendizado
+      que incentivem a autonomia, a criatividade e o desenvolvimento pessoal de cada jovem.
     </p>
   </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="bg-gray-100 py-16 px-6">
+  <!-- PROJETOS -->
+  <section id="projetos" class="bg-gray-100 py-20 px-6">
     <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">Projetos em Destaque</h2>
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center transition transform hover:shadow-xl hover:-translate-y-2">
         <h3 class="text-xl font-semibold text-blue-700 mb-3">Oficinas de Tecnologia</h3>
-        <p>Capacitação em informática e programação para jovens.</p>
+        <p>Capacitação em informática e programação para jovens, estimulando habilidades para o futuro.</p>
       </div>
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center transition transform hover:shadow-xl hover:-translate-y-2">
         <h3 class="text-xl font-semibold text-blue-700 mb-3">Mentoria Profissional</h3>
-        <p>Apoio e orientação para entrada no mercado de trabalho.</p>
+        <p>Apoio e orientação para inserção no mercado de trabalho, com foco em competências práticas.</p>
       </div>
-      <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+      <div class="bg-white rounded-lg shadow-md p-6 text-center transition transform hover:shadow-xl hover:-translate-y-2">
         <h3 class="text-xl font-semibold text-blue-700 mb-3">Apoio Escolar</h3>
-        <p>Refôrço escolar e incentivo à leitura para jovens e adolescentes.</p>
+        <p>Reforço escolar e incentivo à leitura, ajudando no desenvolvimento acadêmico e pessoal.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contribuir -->
-  <section id="contribuir" class="max-w-6xl mx-auto py-16 px-6 text-center">
+  <!-- CONTRIBUIR -->
+  <section id="contribuir" class="max-w-6xl mx-auto py-20 px-6 text-center">
     <h2 class="text-3xl font-bold text-blue-700 mb-6">Contribua com a JEDA</h2>
-    <p class="text-lg mb-6">
-      Seu apoio é fundamental para manter nossos projetos e ajudar mais jovens.
+    <p class="text-lg mb-6 text-gray-700 max-w-2xl mx-auto">
+      Seu apoio é fundamental para manter nossos projetos e ajudar mais jovens a terem acesso à educação e oportunidades.
     </p>
-    <a href="#doar" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+    <a href="#doar" 
+       class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
       Fazer Doação
     </a>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="bg-blue-700 text-white py-12 px-6">
+  <!-- CONTATO -->
+  <section id="contato" class="bg-blue-700 text-white py-16 px-6">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-2xl font-bold mb-4">Entre em Contato</h2>
-      <p>Email: contato@jeda.org</p>
-      <p>Instagram: @jedaong</p>
+      <p class="mb-2">📧 Email: <a href="mailto:contato@jeda.org" class="underline">contato@jeda.org</a></p>
+      <p>📷 Instagram: <a href="https://instagram.com/jedaong" target="_blank" class="underline">@jedaong</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="bg-blue-900 text-white text-center py-4">
-    <p>&copy; 2025 JEDA - Jovem Esperança do Amanhã</p>
+    <p>&copy; 2025 JEDA - Jovem Esperança do Amanhã. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- SCRIPT PARA MENU MOBILE -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
