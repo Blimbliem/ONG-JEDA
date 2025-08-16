@@ -1,83 +1,97 @@
-/* ===== HEADER ===== */
-header {
-  background-color: #1e40af; /* azul */
-  color: #fff;
-  position: fixed;
-  width: 100%;
+/* ========================
+   NAVBAR
+======================== */
+.navbar {
+  background-color: #0d3b66; /* Azul escuro elegante */
+  padding: 15px 20px;
+  position: sticky;
   top: 0;
-  left: 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-header .container {
-  max-width: 1200px;
-  margin: auto;
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-header h1 {
-  font-size: 24px;
+.navbar-logo {
+  font-size: 1.6rem;
   font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-nav ul {
+/* Menu Desktop */
+.navbar-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
-nav ul li a {
-  text-decoration: none;
+.navbar-menu li a {
+  color: #ffffff;
   font-weight: 500;
-  color: #fff;
-  transition: color 0.3s;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #facc15; /* amarelo destaque */
+.navbar-menu li a:hover {
+  background-color: #144272; /* Azul mais claro */
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-nav ul li .btn {
-  background: #e5e7eb;
-  color: #1e3a8a;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-nav ul li .btn:hover {
-  background: #3b82f6;
-  color: white;
-}
-
-/* ===== MENU MOBILE ===== */
-.menu-toggle {
+/* Botão hamburguer (mobile) */
+.navbar-toggle {
   display: none;
+  flex-direction: column;
   cursor: pointer;
-  font-size: 28px;
 }
 
+.navbar-toggle span {
+  height: 3px;
+  width: 28px;
+  background: #ffffff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
 @media (max-width: 768px) {
-  nav ul {
+  .navbar-menu {
     display: none;
     flex-direction: column;
-    background: #60a5fa;
-    padding: 20px;
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: 20px;
-    border-radius: 8px;
+    background: #0d3b66;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    gap: 15px;
   }
 
-  nav ul.show {
+  .navbar-menu.active {
     display: flex;
   }
 
-  .menu-toggle {
-    display: block;
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu li a {
+    text-align: center;
+    width: 100%;
   }
 }

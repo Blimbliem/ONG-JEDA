@@ -1,20 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Cria um container para a navbar
-  const navbarContainer = document.createElement("div");
-  navbarContainer.id = "navbar-container";
-  document.body.prepend(navbarContainer);
+// navbar/navbar.js
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("navbar-container");
 
-  // Carrega o navbar.html
+  // Carrega o HTML da navbar
   fetch("navbar/navbar.html")
     .then(response => response.text())
     .then(data => {
-      navbarContainer.innerHTML = data;
+      container.innerHTML = data;
 
-      // Configura menu mobile
-      const menuToggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
-      menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("show");
+      // Depois que o HTML foi carregado, adiciona funcionalidade do toggle
+      const toggle = container.querySelector(".navbar-toggle");
+      const menu = container.querySelector(".navbar-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
       });
     })
     .catch(error => console.error("Erro ao carregar navbar:", error));
