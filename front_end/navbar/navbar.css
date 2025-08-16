@@ -1,3 +1,4 @@
+/* ===== HEADER ===== */
 header {
   background-color: #1e40af; /* azul */
   color: #fff;
@@ -37,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #fff; /* amarelo */
+  color: #facc15; /* amarelo destaque */
 }
 
 nav ul li .btn {
@@ -50,4 +51,33 @@ nav ul li .btn {
 
 nav ul li .btn:hover {
   background: #3b82f6;
+  color: white;
+}
+
+/* ===== MENU MOBILE ===== */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #60a5fa;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 8px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
