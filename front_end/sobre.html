@@ -3,50 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JEDA - Sobre</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Sobre - JEDA</title>
+  <link rel="stylesheet" href="css/stile.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- HEADER (mesmo que no index) -->
-  <header class="bg-blue-300 text-gray-900 shadow-md fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold tracking-wide">JEDA</h1>
-      <nav class="hidden md:flex space-x-6 font-medium">
-        <a href="index.html" class="hover:text-yellow-500">Início</a>
-        <a href="sobre.html" class="hover:text-yellow-500">Sobre</a>
-        <a href="contato.html" class="hover:text-yellow-500">Contato</a>
-        <a href="index.html#contribuir" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300">Contribuir</a>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>JEDA</h1>
+      <span class="menu-toggle">☰</span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" class="active">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#" class="btn">Contribuir</a></li>
+        </ul>
       </nav>
-      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
     </div>
-    <nav id="mobile-menu" class="hidden md:hidden bg-blue-300 px-6 pb-4">
-      <a href="index.html" class="block py-2 hover:text-yellow-500">Início</a>
-      <a href="sobre.html" class="block py-2 hover:text-yellow-500">Sobre</a>
-      <a href="contato.html" class="block py-2 hover:text-yellow-500">Contato</a>
-      <a href="index.html#contribuir" class="block py-2 mt-2 bg-yellow-400 text-blue-900 px-4 py-2 rounded hover:bg-yellow-300">Contribuir</a>
-    </nav>
   </header>
 
   <!-- SOBRE -->
-  <main class="max-w-6xl mx-auto py-32 px-6">
-    <h2 class="text-3xl font-bold text-center text-blue-700 mb-6">Sobre a JEDA</h2>
-    <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto leading-relaxed">
-      A JEDA é uma organização sem fins lucrativos que oferece apoio educacional e social para jovens e adolescentes,
-      preparando-os para o futuro e para o mercado de trabalho. Nosso compromisso é criar oportunidades de aprendizado
-      que incentivem a autonomia, a criatividade e o desenvolvimento pessoal de cada jovem.
-    </p>
-  </main>
+  <section>
+    <h2>Sobre Nós</h2>
+    <p>A <strong>JEDA - Jovem Esperança do Amanhã</strong> é uma ONG dedicada a apoiar jovens e adolescentes em sua jornada educacional, social e profissional. Nosso objetivo é abrir portas para um futuro melhor, promovendo inclusão, cidadania e oportunidades.</p>
+    <p>Com projetos voltados à educação, capacitação digital, esportes e cultura, buscamos impactar vidas de forma positiva e transformar comunidades.</p>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="bg-blue-900 text-white text-center py-4">
-    <p>&copy; 2025 JEDA - Jovem Esperança do Amanhã. Todos os direitos reservados.</p>
+  <footer>
+    <p>© 2025 JEDA - Jovem Esperança do Amanhã</p>
   </footer>
 
   <script src="js/script.js"></script>

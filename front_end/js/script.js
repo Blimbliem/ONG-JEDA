@@ -1,9 +1,9 @@
-// Script para abrir/fechar menu mobile
-const btn = document.getElementById('mobile-menu-button');
-const menu = document.getElementById('mobile-menu');
+// Menu Mobile
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav ul");
 
-if (btn) {
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+  toggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
   });
-}
+});
