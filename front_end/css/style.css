@@ -6,11 +6,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
-  color: #333;
+  color: #222;
 }
 
 h1, h2, h3 {
-  color: #222;
+  color: #fff;
 }
 
 a {
@@ -31,9 +31,22 @@ a {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("https://picsum.photos/1600/600?blur=2") no-repeat center/cover;
-  color: #fff;
+  /* Remova o background de cor */
+  /* background: #f9f9f9; */
+  color: #f9f9f9;
+
+  /* Adicione as propriedades da imagem de fundo */
+  background-image: url(../imagens/imagem_JEDA.PNG); /* Substitua o caminho pela sua imagem */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-position: center; /* Centraliza a imagem no contêiner */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+
+  /* Adicione um filtro de cor escura para que o texto fique mais visível */
+  background-color: rgba(0, 0, 0, 0.4); /* Preto com 40% de opacidade */
+  background-blend-mode: overlay; /* Mistura a cor com a imagem */
+
+  /* Ajuste a cor do texto para que ele apareça sobre a imagem */
+  color: #ffffff; /* Cor branca para o texto */
 }
 
 .hero h2 {

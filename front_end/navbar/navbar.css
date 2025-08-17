@@ -2,7 +2,7 @@
    NAVBAR
 ======================== */
 .navbar {
-  background-color: #0d3b66; /* Azul escuro elegante */
+  background-color: #0d3b66;
   padding: 15px 20px;
   position: sticky;
   top: 0;
@@ -12,18 +12,19 @@
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Alinha a logo à esquerda e o menu à direita */
   align-items: center;
   max-width: 1200px;
-  margin: auto;
+  margin: auto; /* Centraliza o contêiner na página */
 }
 
 .navbar-logo {
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 1.8rem; /* Aumenta o tamanho um pouco */
+  font-weight: 700; /* Use um valor numérico para o bold */
   color: #ffffff;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Adiciona sombra para maior destaque */
 }
 
 /* Menu Desktop */
