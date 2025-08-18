@@ -42,7 +42,7 @@ a {
   background-repeat: no-repeat; /* Evita que a imagem se repita */
 
   /* Adicione um filtro de cor escura para que o texto fique mais visível */
-  background-color: rgba(0, 0, 0, 0.4); /* Preto com 40% de opacidade */
+  background-color: rgba(0, 0, 0, 0.7); /* Preto com 40% de opacidade */
   background-blend-mode: overlay; /* Mistura a cor com a imagem */
 
   /* Ajuste a cor do texto para que ele apareça sobre a imagem */
@@ -76,7 +76,58 @@ a {
    SEÇÕES (Sobre, Projetos, etc.)
 ======================== */
 section {
-  padding: 60px 20px;
+  padding: 40px 20px;
+  
+}
+
+.sobre-h1{
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.grid {
+  display: flex;
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards */
+  padding: 20px;
+  flex-wrap: wrap; /* quebra linha se não couber */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card-sobre{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+.card-sobre h2{
+  margin: 0;
+  margin-bottom: 15px;
+  color: #0077cc;
+}
+
+
+.card-sobre a {
+  background-color: #0077cc;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.sobre-ong-projetos{
+  color: black;
 }
 
 section h2 {
