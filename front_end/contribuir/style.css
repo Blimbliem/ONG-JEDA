@@ -1,0 +1,20 @@
+
+/* ========================
+   CONTRIBUIR
+======================== */
+.contribuir {
+  text-align: center;
+}
+
+.contribuir .btn {
+  display: inline-block;
+  background: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contribuir .btn:hover {
+  background: #1e7e34;
+}

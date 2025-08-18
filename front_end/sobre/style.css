@@ -1,0 +1,47 @@
+.sobre h2{
+  color: black;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.sobre {
+  display: flex;
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards */
+  padding: 20px;
+  flex-direction: flex-end;
+  flex-wrap: wrap; /* quebra linha se não couber */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.sobre-ong{
+  display: flex;
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards */
+  padding: 20px;
+  flex-direction: flex-end;
+  flex-wrap: wrap; /* quebra linha se não couber */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-historia{
+  display: flex;
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards */
+  padding: 20px;
+  flex-direction: flex-end;
+  flex-wrap: wrap; /* quebra linha se não couber */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-missao{
+  display: flex;
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards */
+  padding: 20px;
+  flex-direction: flex-end;
+  flex-wrap: wrap; /* quebra linha se não couber */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
