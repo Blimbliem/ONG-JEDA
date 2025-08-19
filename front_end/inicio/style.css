@@ -100,34 +100,42 @@ section h2 {
   color: #0077cc;
 }
 
-.carousel-container {
+.carousel-wrapper {
   position: relative;
-  width: 600px;
   overflow: hidden;
+  padding: 0 40px;
+  max-width: 100%;
   margin: auto;
 }
 
 .carousel-track {
   display: flex;
+  gap: 20px;
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-slide img {
-  width: 600px;
-  height: 300px;
+.carousel-track .card {
+  min-width: 280px;
+  flex: 0 0 auto;
 }
 
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
+  background: transparent;
+  color: #0077cc;
   border: none;
   font-size: 2rem;
   cursor: pointer;
   padding: 10px;
+  z-index: 1;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
