@@ -66,10 +66,11 @@ a {
   padding: 12px 25px;
   border-radius: 5px;
   transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .hero .btn:hover {
-  background: #005fa3;
+  transform: scale(1.05);
 }
 
 

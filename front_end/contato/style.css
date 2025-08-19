@@ -34,6 +34,11 @@
     padding: 15px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.contato-info:hover{
+    transform: scale(1.05);
 }
 
 .mapa {
@@ -43,6 +48,11 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mapa:hover{
+    transform: scale(1.05);
 }
 
 /* Estilo para ícones */
