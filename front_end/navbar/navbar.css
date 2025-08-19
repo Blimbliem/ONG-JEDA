@@ -18,13 +18,26 @@
   margin: auto; /* Centraliza o contêiner na página */
 }
 
+/* ========================
+   NAVBAR
+======================== */
+/* ... (outras regras) ... */
+
 .navbar-logo {
-  font-size: 1.8rem; /* Aumenta o tamanho um pouco */
-  font-weight: 700; /* Use um valor numérico para o bold */
-  color: #ffffff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Adiciona sombra para maior destaque */
+    display: flex; /* Adicionado para usar Flexbox */
+    align-items: center; /* Alinha os itens (imagem e texto) verticalmente no centro */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Adicione estas regras ao final do seu arquivo navbar.css */
+.navbar-logo img {
+    height: 40px; /* Ajuste a altura da imagem conforme necessário */
+    margin-right: 10px; /* Adiciona um espaço de 10px entre a imagem e o texto */
 }
 
 /* Menu Desktop */
