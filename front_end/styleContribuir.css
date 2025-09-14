@@ -15,8 +15,9 @@
 
 .contribuir-section .card-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* empilha os cards */
+  gap: 20px; /* espaço entre eles */
+  align-items: center; /* centraliza no meio */
 }
 
 .contribuir-section .card {
@@ -54,6 +55,13 @@
 .contribuir-section .btn:hover {
   background-color: #005fa3;
   transform: translateY(-3px);
+}
+
+.contribuir-section .card h3 {
+  color: #0077cc;      /* azul igual ao botão */
+  font-size: 1.3rem;   /* um pouco maior para destacar */
+  margin-bottom: 15px;
+  font-weight: bold;   /* deixa em negrito */
 }
 
 /* FOOTER */
