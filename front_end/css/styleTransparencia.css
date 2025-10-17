@@ -1,0 +1,116 @@
+/* ========================
+   ESTILOS GERAIS DE LAYOUT
+======================== */
+/* Garante que o body use todo o espaço e permite que o footer fixe embaixo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Garante que o conteúdo principal (main) ocupe o espaço restante */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Cor de fundo clara para o corpo */
+}
+
+/* Estilo do Rodapé - Usado como referência */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* ========================
+   ESTILO DA PÁGINA TRANSPARÊNCIA
+======================== */
+.transparencia-container {
+    max-width: 1000px; /* Limita a largura central para melhor leitura */
+    margin: auto; /* Centraliza o conteúdo */
+    text-align: center;
+}
+
+.transparencia-container h1 {
+    font-size: 2.5rem;
+    color: #0077cc; /* Cor primária do site (ex: azul) */
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.transparencia-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================
+   ESTILO DAS SEÇÕES DE DOCUMENTOS
+======================== */
+.docs-section {
+    text-align: left; /* Alinha o conteúdo da seção à esquerda */
+    background: #fff; /* Fundo branco para destaque */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra para dar aspecto de 'card' */
+}
+
+.docs-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    border-bottom: 2px solid #eee; /* Linha sutil para separar o título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ========================
+   ESTILO DA LISTA DE LINKS
+======================== */
+.docs-list {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+}
+
+.docs-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd; /* Linha pontilhada para separar os documentos */
+}
+
+.docs-list li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+.docs-list a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #0056b3; /* Cor do link */
+    font-size: 1.1rem;
+    display: block; /* Ocupa toda a largura do item da lista */
+    padding: 5px 0;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efeito de hover */
+.docs-list a:hover {
+    color: #003366;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/* Adiciona um ícone de PDF se desejar (opcional) */
+/*
+.docs-list a::before {
+    content: "📄";
+    margin-right: 8px;
+}
+*/
