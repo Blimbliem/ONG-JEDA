@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Carrega o HTML da navbar
   fetch("navbar.html")
+  
     .then(response => response.text())
     .then(data => {
+      console.log("Navbar carregada com sucesso!")
       container.innerHTML = data;
 
       // Depois que o HTML foi carregado, adiciona funcionalidade do toggle
